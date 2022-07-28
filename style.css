@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+
 .menubar-mobile {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     display: none;
+    z-index: 999;
 }
 .menubar-desktop {
     background: darkorange;
@@ -26,7 +29,13 @@
 
 .menubar-desktop li:hover {
     background-color: black;
+    transition: .5s ease;
   }
+
+.active {
+    background-color: black;
+    color: darkorange;
+}
 
 .menubar-desktop li a {
     text-decoration: none;
@@ -41,7 +50,7 @@
 
 .profile_image img {
     width: 200px;
-    height: 190px;
+    height: 260px;
     border-radius: 50%;
     background-color: white;
 }
@@ -61,6 +70,8 @@ section {
     color: white;
     height: 100vh;
 }
+
+
 
 section h4,h1, h6 {
     text-transform: uppercase;
@@ -83,6 +94,12 @@ section h5 {
     font-size: 72px;
     color: darkorange;
     padding-bottom: 10px;
+}
+
+#about p {
+    font-size: 20px;
+    color: white;
+   
 }
 
 #about .icons {
@@ -124,4 +141,10 @@ section h5 {
         height: 100%;
     }
 
+
+
+}
+
+h4 {
+    font-family: 'Montserrat Subrayada', sans-serif;
 }
